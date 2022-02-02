@@ -1,24 +1,34 @@
+# TravelMoments Web App
+This web app was created for the exam of web development course provided by University of Trieste.
+TravelMoments is a web-app to record travel routes and places.
+
+![](screnshot/Schermata 2022-01-29 alle 11.21.23.png)
+
+![](screnshot/Schermata 2022-01-29 alle 11.21.50.png)
+
+![](screnshot/Schermata 2022-01-29 alle 11.22.07.png)
+
 # Backend
 ###Setup MongoDatabase
-Per importare il database eseguire i seguenti comandi
+To import the dumped database:
 ````
 cd mongo_database_dump
 mongorestore -d progrweb dump/progrweb
 ````
 
-Nel caso in cui non si voglia importare il db fornito, seguire i seguenti passi.
+OR
 
-Avviare mongosh
+To create a new database with MongoDB
 ````
 mongosh
 ````
 
-Creare un nuovo database 'progrweb'
+Create a new database "progrweb"
 ```
 use progrweb
 ```
 
-inserire i seguenti comandi via mongosh:
+Insert the necessary setup collection via mongosh:
 ```
 db.createCollection("roles")
 db.createCollection("travels")
@@ -52,17 +62,8 @@ npm install
 npm run serve
 ```
 
-#Info
+## User already presents on the DB
 
-Per generare percorsi in formato geojson è possibile usare il seguente link:
-````
-https://geojson.io/#map=2/20.0/0.0
-````
-Disegnando la tratta con lo strumento opportuno e salvando il file in formato GeoJson
-
-## Utenti presenti nel DB
-
-All'interno del database importato, sono stati aggiunti 2 User:
 1. User1
 ````
 Username : User1
@@ -74,5 +75,3 @@ Password : user123
 Username : User2
 Password : user123
 ````
-
-Per entrambi gli utenti sono state aggiunti alcuni viaggi di esempio.

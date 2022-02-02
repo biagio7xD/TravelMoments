@@ -5,7 +5,7 @@
         id="gmaps"
         :center="center"
         :zoom="8"
-        api-key="AIzaSyD_L001FEb9q8w8XJoNn1yOvIfb3nEv3Fs"
+        api-key="API-KEY"
     >
       <Marker
           v-for="(gmp, index) in this.value"
