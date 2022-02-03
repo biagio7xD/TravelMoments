@@ -22,14 +22,14 @@ Same interface as for inserting new travels, but used to modify an existing trav
 A new user must be able to register through a special publicly accessible page. Each user is required to provide a username, password and email address.
 
 
-![](./screnshot/Schermata 2022-01-29 alle 11.21.23.png)
+![Screenshot](./screnshot/one.png)
 
-![](./screnshot/Schermata 2022-01-29 alle 11.21.50.png)
+![Screenshot](./screnshot/two.png)
 
-![](./screnshot/Schermata 2022-01-29 alle 11.22.07.png)
+![Screenshot](./screnshot/three.png)
 
 # Backend
-###Setup MongoDatabase
+##Setup MongoDatabase
 To import the dumped database:
 ````
 cd mongo_database_dump
